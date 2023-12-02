@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SoalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Route::middleware(['auth'])->group(function() {
     })->name('home');
 
     Route::resource('user', UserController::class);
+    Route::resource('soal', SoalController::class);
 });
 
 //Route::get('/login', function () {
